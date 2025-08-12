@@ -21,7 +21,7 @@ travel-blog-template
 ## How to Run the Project
 1. **Download or Clone** the repository:
    ```bash
-   git clone https://github.com/your-username/travel-blog-template.git
+   git clone https:https://github.com/jessicaosta28/Travel-Blog-Webpage-Design/tree/main
 
 
 
