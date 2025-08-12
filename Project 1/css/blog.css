@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #fef6f9;
+    color: #3a2a3a;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5%;
+    background-color: #b98ea7; /* Soft rose pink */
+    color: white;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav a {
+    color: white;
+    margin-left: 1em;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* FEATURED POST WITH VIDEO */
+.featured-post {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.featured-content {
+    background: rgba(185, 142, 167, 0.5); /* translucent rose pink */
+    padding: 1.5em;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.featured-content h1 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.featured-content p {
+    margin: 0.5em 0;
+    color: #fdfdfd;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #d291bc; /* Light purple */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #b76da5;
+}
+
+/* MAIN LAYOUT */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 5%;
+}
+
+.recent-posts h2 {
+    margin-bottom: 0.5em;
+    color: #b76da5;
+}
+
+/* GRID LAYOUT */
+.post-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(183, 109, 165, 0.3);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    padding: 0.5em;
+    color: #b76da5;
+}
+
+.card a {
+    display: inline-block;
+    padding: 0.5em;
+    color: #b76da5;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* SIDEBAR */
+.sidebar {
+    margin-top: 2em;
+}
+
+.bio {
+    text-align: center;
+    background: white;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.bio img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.categories {
+    margin-top: 1em;
+    background: white;
+    padding: 1em;
+    border-radius: 8px;
+}
+
+.categories ul {
+    list-style: none;
+}
+
+.categories li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 5%;
+    background-color: #b98ea7;
+    color: white;
+    margin-top: 2em;
+}
+
+.instagram {
+    margin-bottom: 1em;
+}
+
+.insta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5em;
+}
+
+.insta-grid img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 0.5em;
+    background-color: #d291bc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: #b76da5;
+}
+
+/* BACK TO TOP */
+.back-to-top {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    background: #d291bc;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.back-to-top:hover {
+    background: #b76da5;
+}
+
+/* RESPONSIVE DESIGN */
+@media(min-width: 768px) {
+    .main-content {
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .recent-posts {
+        flex: 3;
+    }
+
+    .sidebar {
+        flex: 1;
+    }
+
+    .post-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
