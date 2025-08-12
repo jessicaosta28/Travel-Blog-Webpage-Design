@@ -2,14 +2,8 @@
 
 A visually appealing and responsive travel blog webpage built with **HTML** and **CSS**.  
 The template is designed to showcase travel experiences, photos, and articles with a modern layout and aesthetic color palette.
-travel-blog-template/
-│── index.html         # Main HTML file
-│── css/
-│   └── blog.css       # Stylesheet
-│── images/
-│   ├── posts/         # Blog images & featured video
+travel-blog-template
 
-│   └── blogger.jpg    # Bio profile image
 ##  Features
 - **Responsive Design** – Works seamlessly on mobile, tablet, and desktop.
 - **Video Background** – Eye-catching hero section with autoplay video.
@@ -28,5 +22,6 @@ travel-blog-template/
 1. **Download or Clone** the repository:
    ```bash
    git clone https://github.com/your-username/travel-blog-template.git
+
 
 
